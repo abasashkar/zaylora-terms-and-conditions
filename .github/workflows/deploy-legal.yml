@@ -1,4 +1,4 @@
-name: Deploy Legal Pages
+name: Deploy Zaylora Terms and Conditions
 
 on:
   push:
@@ -24,11 +24,13 @@ jobs:
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
-      - name: Upload legal pages
+      - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./legal
+          path: .
 
       - name: Deploy to GitHub Pages
         id: deployment
