@@ -120,6 +120,31 @@
       padding-top: 4px;
     }
 
+    ul {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 18px;
+      color: #2a2a2a;
+    }
+
+    ul li::before {
+      content: "·";
+      position: absolute;
+      left: 0;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    section p + p {
+      margin-top: 14px;
+    }
+
     .examples {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -195,51 +220,68 @@
   <main class="page">
     <header>
       <img class="logo" src="logo.png" alt="Zaylora Premium Essentials">
-      <p class="kicker">Creator Programme</p>
-      <h1>Terms & Conditions</h1>
-      <p class="lede">Join the Zaylora Team. Share your personal invite link and earn Z Points when customers shop through you.</p>
+      <p class="kicker">ZAYLORA</p>
+      <h1>Terms & Policies</h1>
+      <p class="lede">Delivery, payments, returns, and how we handle your orders across the UAE.</p>
     </header>
 
     <section>
-      <h2>Join the Zaylora Team</h2>
-      <p>Become part of the Zaylora creator team, share your personal invite link, and earn Z Points when customers shop through you.</p>
+      <h2>Delivery Policy</h2>
+      <p>ZAYLORA delivers across all UAE emirates.</p>
+      <ul>
+        <li>Dubai delivery: AED 21</li>
+        <li>Other emirates delivery: AED 31</li>
+        <li>Free delivery: Buy 3 or more products in one order.</li>
+        <li>Delivery time depends on the customer’s location.</li>
+        <li>Customers must provide the correct phone number and delivery address.</li>
+        <li>If the customer is unavailable, an extra delivery charge may apply for another attempt.</li>
+      </ul>
     </section>
 
     <section>
-      <h2>How It Works</h2>
-      <ol>
-        <li>You will receive your own unique Zaylora invite link.</li>
-        <li>Share the invite link on Instagram, TikTok, WhatsApp, or other social media.</li>
-        <li>Customers must place their order through your invite link.</li>
-        <li>You earn 500 Z Points = 5 AED when a referred customer buys 3 or more products in one order.</li>
-        <li>Orders with only 1 or 2 products do not earn commission.</li>
-        <li>Points are added only after the customer successfully receives and completes the order.</li>
-        <li>Cancelled, returned, refunded, fake, or rejected orders will not earn Z Points.</li>
-        <li>Zaylora may review suspicious or fraudulent referrals before approving points.</li>
-        <li>Your invite link is personal and should not be misused or used to create fake orders.</li>
-        <li>Payouts are based on your approved Z Points balance and Zaylora’s payout rules.</li>
-      </ol>
+      <h2>Cash on Delivery Policy</h2>
+      <p>ZAYLORA accepts cash on delivery.</p>
+      <p>Please keep the exact order amount ready when the delivery arrives. Customers should check the package before accepting the order.</p>
     </section>
 
     <section>
-      <h2>Example</h2>
-      <div class="examples">
-        <article class="card yes">
-          <p class="label">Commission</p>
-          <p>Customer buys 3 products → You earn 500 Z Points = 5 AED</p>
-        </article>
-        <article class="card">
-          <p class="label">No commission</p>
-          <p>Customer buys 1 or 2 products → No commission</p>
-        </article>
-      </div>
-      <p class="note">More successful referrals = more Z Points and more earnings.</p>
+      <h2>Return and Refund Policy</h2>
+      <p>If you receive a wrong, damaged, or defective product, contact ZAYLORA within 24 hours of delivery.</p>
+      <p>Please send clear photos or a video of the product and packaging. Our team will review the issue and arrange a suitable solution where applicable.</p>
+      <p>Products must be unused and returned with the original packaging and accessories. Change-of-mind returns are not accepted for used, opened, damaged, or incomplete products.</p>
+    </section>
+
+    <section>
+      <h2>Warranty and Replacement Policy</h2>
+      <p>Warranty or replacement is available only when mentioned on the product page or invoice.</p>
+      <p>Warranty does not cover physical damage, water damage, misuse, accidental damage, broken accessories, or normal wear and tear.</p>
+      <p>For a warranty request, contact us with your order details, photos, and a video showing the issue.</p>
+    </section>
+
+    <section>
+      <h2>Order Cancellation Policy</h2>
+      <p>Customers may request cancellation before the order is dispatched.</p>
+      <p>After dispatch, cancellation may not be possible. Repeated refusal of confirmed cash-on-delivery orders may affect future orders.</p>
+    </section>
+
+    <section>
+      <h2>Terms and Conditions</h2>
+      <p>By placing an order with ZAYLORA, you agree to provide correct personal, phone, and delivery details.</p>
+      <p>Product prices, availability, images, and descriptions may change without notice. Orders may be cancelled if a product is unavailable or incorrect information is displayed.</p>
+      <p>Customers must pay the confirmed cash-on-delivery amount when receiving the order.</p>
+    </section>
+
+    <section>
+      <h2>Privacy Policy</h2>
+      <p>ZAYLORA respects your privacy.</p>
+      <p>We collect your name, phone number, delivery address, and order details only to process and deliver your order.</p>
+      <p>Necessary information may be shared with our delivery partner. ZAYLORA does not sell your personal information to third parties.</p>
     </section>
 
     <section>
       <footer>
-        <p class="tagline">Join the Zaylora Team. Share. Earn. Grow with us.</p>
-        <p class="fine">Zaylora · Premium Essentials</p>
+        <p class="tagline">ZAYLORA · Premium Essentials</p>
+        <p class="fine">Thank you for shopping with us.</p>
       </footer>
     </section>
   </main>
